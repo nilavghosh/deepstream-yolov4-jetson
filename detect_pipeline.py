@@ -54,7 +54,9 @@ TILED_OUTPUT_WIDTH=1280
 TILED_OUTPUT_HEIGHT=720
 GST_CAPS_FEATURES_NVMM="memory:NVMM"
 OSD_PROCESS_MODE= 0
-OSD_DISPLAY_TEXT= 0
+
+# Enable text overlay
+OSD_DISPLAY_TEXT= 1
 pgie_classes_str= ["Vehicle", "TwoWheeler", "Person","RoadSign"]
 
 # tiler_sink_pad_buffer_probe  will extract metadata received on OSD sink pad
@@ -172,7 +174,6 @@ def tiler_src_pad_buffer_probe(pad,info,u_data):
             break
 
     return Gst.PadProbeReturn.OK
-
 
 
 def cb_newpad(decodebin, decoder_src_pad,data):
