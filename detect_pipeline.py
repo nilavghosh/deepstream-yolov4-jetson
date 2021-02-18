@@ -57,7 +57,7 @@ OSD_PROCESS_MODE= 0
 
 # Enable text overlay
 OSD_DISPLAY_TEXT= 1
-pgie_classes_str= ["Vehicle", "TwoWheeler", "Person","RoadSign"]
+pgie_classes_str= ["Head", "Body"]
 
 # tiler_sink_pad_buffer_probe  will extract metadata received on OSD sink pad
 # and update params for drawing rectangle, object information etc.
